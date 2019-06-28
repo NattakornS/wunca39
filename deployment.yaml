@@ -39,12 +39,12 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: wunca39
+  name: wunca39-c
 spec:
   rules:
   - host: wunca39-c.192.168.84.151.nip.io
     http:
       paths:
-     - backend:
+      - backend:
         serviceName: devstarter-service
         servicePort: 80
