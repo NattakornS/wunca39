@@ -34,17 +34,17 @@ spec:
         image: ${CICD_IMAGE}:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
         ports:
         - containerPort: 80
-## Ingress example
-#---
-#apiVersion: extensions/v1beta1
-#kind: Ingress
-#metadata:
-#  name: wunca39
-#spec:
-#  rules:
-#  - host: wunca39.172.31.133.212.nip.io
-#    http:
-#      paths:
-#      - backend:
-#          serviceName: devstarter-service
-#         servicePort: 80
+# Ingress example
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wunca39
+spec:
+  rules:
+  - host: wunca39-c.192.168.84.151.nip.io
+    http:
+      paths:
+     - backend:
+        serviceName: devstarter-service
+        servicePort: 80
